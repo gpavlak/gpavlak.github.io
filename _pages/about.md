@@ -19,6 +19,6 @@ Welcome! We are a multi-faceted team developing new solutions at the intersectio
 
 - Optimal co-design methods for zero carbon buildings
 - Uncertainty-aware supervisory controls for grid-interactive building portfolios
-- Scalability and transferability of intelligent building controls methods
+- Scalability and transferability of intelligent building control methods
 
 The Building Energy Optimization Group (BEOG) is currently led by Assistant Professor Dr. Greg Pavlak. Please check out our [people]({{ "people/" | relative_url }}) and  [publications]({{ "publications/" | relative_url }}) pages to learn more about the team and our work!
