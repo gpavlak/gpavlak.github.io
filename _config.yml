@@ -14,6 +14,7 @@ footer_text: >
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
 #  Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
 
+lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: BEOG # the emoji used as the favicon
 url:  # the base hostname & protocol for your site
 baseurl: # the subpath of your site, e.g. /blog/
@@ -63,6 +64,9 @@ work_url: # work page URL
 keybase_username: # your keybase user name
 wikidata_id: # your wikidata id
 dblp_url: # your DBLP profile url
+stackoverflow_id: #your stackoverflow id
+
+rss_icon: true
 
 contact_note: >
   Please feel free to contact us via email to learn more about our work.
@@ -137,17 +141,43 @@ keep_files:
 
 # Plug-ins
 plugins:
+  - jekyll-archives
+  - jekyll-diagrams
   - jekyll-email-protect
-  - jekyll-github-metadata
   - jekyll-feed
+  - jekyll-github-metadata
   - jekyll-paginate-v2
+  - jekyll-responsive-image
   - jekyll/scholar
-  - jekyll-twitter-plugin
   - jekyll-sitemap
+  - jekyll-target-blank
+  - jekyll-twitter-plugin
   - jemoji
+
+# Sitemap settings
+defaults:
+  - scope:
+      path:            "assets/**/*.*"
+    values:
+      sitemap:         false
 
 # Extras
 github: [metadata]
+
+# -----------------------------------------------------------------------------
+# Jekyll Archives
+# -----------------------------------------------------------------------------
+
+jekyll-archives:
+  enabled: [year, tags, categories] # enables year, tag and category archives (remove if you need to disable one of them). 
+  layouts:
+    year: archive-year
+    tag: archive-tag
+    category: archive-category
+  permalinks:
+    year: '/blog/:year/'
+    tag: '/blog/tag/:name/'
+    category: '/blog/category/:name/'
 
 # -----------------------------------------------------------------------------
 # Jekyll Scholar
@@ -165,16 +195,46 @@ scholar:
   source: /_bibliography/
   bibliography: papers.bib
   bibliography_template: bib
+  # Note: if you have latex math in your bibtex, the latex filter
+  # preprocessing may conflict with MathJAX if the latter is enabled.
+  # See https://github.com/alshedivat/al-folio/issues/357.
+  bibtex_filters: [latex, smallcaps, superscript]
 
   replace_strings: true
   join_strings: true
-  bibtex_filters:
 
   details_dir: bibliography
   details_layout: bibtex.html
   details_link: Details
 
   query: "@*"
+
+
+# -----------------------------------------------------------------------------
+# Jekyll Responsive Images
+# -----------------------------------------------------------------------------
+
+responsive_image:
+  template: _includes/responsive_img.html
+  # Quality to use when resizing images.
+  default_quality: 80
+  sizes:
+    - width: 480
+    - width: 800
+    - width: 1400
+      quality: 90
+  # Strip EXIF and other JPEG profiles. Helps to minimize JPEG size.
+  strip: true
+
+
+# -----------------------------------------------------------------------------
+# Jekyll Diagrams
+# -----------------------------------------------------------------------------
+
+jekyll-diagrams:
+    # configuration, see https://github.com/zhustec/jekyll-diagrams.
+    # feel free to comment out this section if not using jekyll diagrams.
+
 
 # -----------------------------------------------------------------------------
 # Markdown CV
@@ -198,6 +258,7 @@ enable_project_categories:  false   # enables categorization of projects into
 enable_people_categories:   true   # enables categorization of people into
                                    # multiple categories
 enable_medium_zoom:         true   # enables image zoom feature (as on medium.com)
+
 
 # -----------------------------------------------------------------------------
 # Library versions
