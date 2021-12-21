@@ -7,4 +7,8 @@ importance: 1
 category: current
 ---
 
-Coming soon...
+{% responsive_image path: assets/img/gxp93.jpg title: "example image" class: "img-fluid rounded z-depth-1" %}
+
+More soon...
+
+[//]: # <img src="/assets/img/gxp93.jpg" alt="drawing" width="200"/>

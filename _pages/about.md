@@ -6,7 +6,7 @@ description: <a href="https://www.ae.psu.edu" target="_blank" rel="noopener nore
 
 profile:
   align: right
-  image: about_pic.jpg
+  image: bldg.jpg
   address: >
     <p style="text-align:right"><small>Image: <a href="https://unsplash.com/@joelfilip" target="blank" rel="noopener noreferrer">@joelfilip</a> via Unsplash.</small></p>
 
