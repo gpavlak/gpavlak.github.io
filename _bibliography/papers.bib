@@ -14,11 +14,11 @@ abstract = {With the increasing numbers of distributed energy resources are bein
 }
 
 @article{YUPREPRINT1,
-abbr = {preprint},
+abbr = {JESBC},
 pdf={PreprintUATXAggregator.pdf},
 title = {Decision making under uncertainty for building thermal energy storage aggregators participating in two-settlement grid markets},
-journal = {(under review)},
-year = {submitted},
+journal = {Journal of Engineering for Sustainable Buildings and Cities},
+year = {accepted},
 author = {Min Gyung Yu and Gregory S. Pavlak},
 abstract = {Smart cities will need collections of buildings that are responsive to the variation in renewable energy gen- eration. However, an unprecedented level of renewable energy being added to the power grid compounds the level of uncertainties in making decisions for reliable grid operation. Making autonomous decisions re- garding demand management requires consideration of uncertainty in the information available for planning and executing operations. Thus, this paper aims to quantitatively analyze the performances of supervisory controllers for multiple grid-integrative buildings with thermal energy storage depending on the quality of information available. Day-ahead planning and real-time model predictive controllers were developed and compared across 50 validation scenarios when given perfect information, deterministic forecasts, and stochas- tic forecasts. Despite the relatively large uncertainty in the stochastic forecasts, marked improvements were observed when a stochastic optimization was solved for both the day-ahead and real-time problems. This observation underscores the need for continued development in the area of stochastic control and decision- making for future grid-interactive buildings and improved energy management of smart cities.}
 }
@@ -34,25 +34,85 @@ abstract = {Optimization and control of building thermal energy storage holds gr
 }
 
 @article{MOTTAHEDIPREPRINT,
-abbr = {preprint},
+abbr = {BuildSys},
 pdf={PreprintCDCEM.pdf},
-title = {Constrained Differentiable Cross-Entropy Method for Safe Model-based Reinforcement Learning},
-journal = {(under review)},
-year = {submitted},
+title = {Constrained differentiable cross-entropy method for safe model-based reinforcement learning},
+journal = {9th ACM International Conference on Systems for Energy-Efficient Buildings, Cities, and Transportation (BuildSys ’22)},
+year = {accepted},
 author = {Sam Mottahedi and Gregory S. Pavlak},
-abstract = {This paper proposes MPC-CDCEM, a model-based reinforcement algorithm (RL) that allows the agent to safely interact with the en- vironment and explore without additional assumptions on system dynamics. The algorithm uses a Model Predictive Control (MPC) framework with a differentiable cross-entropy optimizer, which induces a differentiable policy that considers the constraints while addressing the objective mismatch problem in model-based RL al- gorithms. We evaluate our algorithm in Safety Gym environments and on a practical building energy optimization problem. In addi- tion, we showed that in both experiments, our algorithms have the lowest number of constraint violations and achieve comparable rewards compared to baseline constrained RL algorithms.}
+abstract = {Reinforcement learning agents must explore their environments to learn optimal policies through trial and error. Due to challenges in simulating the complexities of the real world, there is a growing trend of training reinforcement learning (RL) agents directly in the real world instead of mostly or entirely in simulation. Safety con- cerns are paramount when training RL agents directly in the real world. This paper proposes MPC-CDCEM, a model-based reinforce- ment algorithm (RL) that allows the agent to safely interact with the environment and explore without additional assumptions on system dynamics. The algorithm uses a Model Predictive Control (MPC) framework with a differentiable cross-entropy optimizer, which induces a differentiable policy that considers the constraints while addressing the objective mismatch problem in model-based RL algorithms. We evaluate our algorithm in Safety Gym environ- ments and on a practical building energy optimization problem. In addition, we showed that in both experiments, our algorithms have the lowest number of constraint violations and achieve comparable rewards compared to baseline constrained RL algorithms.}
 }
 
 @article{SEPEHRIPREPRINT,
 abbr = {preprint},
 pdf={PreprintHVACandAIS.pdf},
-title = {Joint Optimization of HVAC and Active Insulation Control Strategies in Residential Buildings},
+title = {Joint optimization of HVAC and active insulation control strategies in residential buildings},
 journal = {(under review)},
 year = {submitted},
 author = {Amin Sepehri and Gregory S. Pavlak},
 abstract = {Recently, active insulation systems (AIS) have been conceptualized in building envelopes to optimally mod- ulate the thermal resistance in response to changing environmental conditions. Building flexibility can further be improved if the building is also equipped with optimized heating, ventilating, and air condition- ing (HVAC) control. In this work, we investigate the annual potential benefits of jointly optimizing AIS and HVAC system controls in both heating and cooling days over all climate zones (CZs) in the U.S. To reduce the computational complexity of applying model predictive control (MPC) to annual operations and detailed whole-building energy models, timeseries clustering was used to identify a set of representative days for optimizing in each climate zone. To isolate the increase in benefits from this joint optimization, we com- pare the performance to cases where the AIS and HVAC controls are optimized separately. Results indicate savings potential in all CZs, with the largest annual average savings of 9.02% and 4.02% observed in the cooling days with large daily temperature swings and heating days with cold sunny condition, respectively. Savings patterns across climate zone, day types, and HVAC mode (i.e., heating or cooling) are also discussed along with the implications of important system design variables.}
 }
 
+@INPROCEEDINGS{9859293,
+abbr = {SimAUD},
+bibtex_show={true},
+pdf={67_Paper_DYNAMIC-SUBSET-SENSITIVITY-ANALYSIS-FOR-DESIGN-EXPLORATION-2.pdf},
+author={Laura Hinkle and Gregory S. Pavlak and Nathan Brown and Leland Curtis},
+booktitle={2022 Annual Modeling and Simulation Conference (ANNSIM)},
+title={Dynamic subset sensitivity analysis for design exploration},
+year={2022},
+month={July},
+volume={},
+number={},
+pages={581-592},
+doi={10.23919/ANNSIM55834.2022.9859293},
+html={https://doi.org/10.23919/ANNSIM55834.2022.9859293},
+abstract = {This paper presents a method for dynamically assessing parametric variable importance and likely influence on performance objectives as a large, precomputed design space is filtered down to explore more specific problems. Custom parametric models coupled with performance simulation can support early design, but they can be inflexible and are not always created in practice due to time and other constraints. Large parametric datasets of previously simulated design subproblems could thus make performance-based modeling more accessible, but they can have too much information and fail to focus on supporting design decisions for specific variables and ranges. Using a parametric daylight room model as an example, we first train a linear model tree. As variable bounds are filtered and adjusted by a designer, remaining coefficients are interpolated to provide an adjusted variable importance for the new domain.}
+}
+
+
+@inproceedings{simbuild2022_C028,
+abbr = {BPAC},
+bibtex_show={true},
+pdf={simbuild2022_C028.pdf},
+html = {https://doi.org/10.26868/25746308.2022.C028},
+url = {https://publications.ibpsa.org/conference/paper/?id=simbuild2022_C028},
+year = {2022},
+month = {September},
+publisher = {ASHRAE/IBPSA-USA},
+author = {Behzad Rizi and   Mohammad Heidarinejad and   Gregory Pavlak and   Vincent Cushing and   William Hederman},
+title  = {Evaluating the performance of chiller plant efficiency using random forest model: a high-rise building case study},
+booktitle = {2022 Building Performance Analysis Conference and SimBuild co-organized by ASHRAE and IBPSA-USA},
+volume  = {10},
+isbn = {978-1-955516-21-1},
+address  = {Chicago, Illinois},
+series  = {ASHRAE/IBPSA-USA Building Simulation Conference},
+language = {en-US},
+pages = {234--242},
+abstract = {Assessing electricity consumption of chilled-water cooling plants is essential for near-optimal operation and carbon emission reduction. The goal of this study is to develop an efficient chiller sequencing control strategy for different building operating conditions. To that end, this study aims to develop three Random Forest (RF) chiller models for predicting chiller power consumption and two more efficient chiller sequencing control strategies for a 1.3 million ft 2 high-rise commercial office building located in New York City. Chiller cooling load, chiller power consumption, and ambient wet bulb temperature were logged at 15-min intervals in May-September 2019, and used to train RF models for analyzing the two more efficient chiller sequencing strategies. The average value of mean absolute percentage error (MAPE) and root mean squared error (RMSE) for all three RF chiller models are 5.3% and 30 kW, respectively, for the validation dataset, which confirms a good agreement between measured and predicted values. Results of this study provide additional insights on how to accurately predict the total chiller power consumption of cooling plants under different chiller sequencing control strategies.},
+issn = {2574-6308},
+Organisation = {ASHRAE/IBPSA-USA},
+Editors = {}
+}
+
+@inproceedings{2022_ASHRAE_Annual_Sepehri,
+abbr = {ASHRAE},
+bibtex_show={true},
+pdf={Joint Optimization of HVAC and Active Insulation Control Strategies in Residential Buildings.pdf},
+html = {https://scholarsphere.psu.edu/resources/3d364e94-2b6d-422c-a521-a2093d898937},
+url = {https://scholarsphere.psu.edu/resources/3d364e94-2b6d-422c-a521-a2093d898937},
+year = {2022},
+month = {June},
+publisher = {ASHRAE},
+author = {Amin Sepehri and Gregory S. Pavlak},
+title  = {Joint optimization of HVAC and active insulation control strategies in residential buildings},
+booktitle = {2022 ASHRAE Annual Conference},
+address  = {Toronto, Ontario},
+language = {en-US},
+pages = {1--8},
+abstract = {Increasing building construction thermal resistance has been shown to be an effective traditional way ofimproving building energy efficiency. In this approach, the opaque building envelope is often deemed to be a static system that keeps the indoor environment isolated from the outdoor environment. More recently, active insulation systems (AIS) have been conceptualized to enable active control over building envelope thermal properties, allowing the thermal resistance to be optimally modulated in response to changing environmental conditions. Dynamically tuning the building thermal performance can lead to increased energy savings, reduced operating costs, and reductions in operational carbon emissions. When paired with thermal mass, AIS can also increase building load flexibility for providing demand response and grid services. Building flexibility can further be improved if the building is also equipped with optimized HVAC system controls. In this configuration, the AIS and HVAC systems can be beneficially coordinated to optimally condition the space based on the desired operational objectives. In this work, we quantify the potential benefits ofjointly optimizing AIS and HVAC system controls by applying model predictive control to a detailed whole-building energy model. The example building is an all-electric single-family residential building, satisfying IECC 2012, in Baltimore, MD. To highlight the increase in benefits from jointly optimizing HVAC and dynamic envelope systems, we compare the results to the performance achieved when optimizing HVAC and AIS systems individually. Results showed that the combined optimization of HVAC and AIS control was able to achieve 13% peak demand reduction, while savings 3% energy. This is in contrast to only a 10% peak reduction and 16% increase in energy use for the case with optimized HVAC only. These results ultimately motivate further exploration, integration, and joint optimization ofdynamic envelope and HVAC system components.},
+Organisation = {ASHRAE}
+}
 
 @article{YU2022104405,
 abbr = {JES},
@@ -87,17 +147,17 @@ abstract = {In this work, a topology optimization framework for district thermal
 }
 
 
-@article{doi:10.1061/(ASCE)AE.1943-5568.0000532,
+@article{HALEEMJAE2022,
 abbr = {JAE},
 bibtex_show={true},
-author = {Abdel Haleem, Shadi M. and Pavlak, Gregory S. and Bahnfleth, William P.},
+author = {Shadi Abdel Haleem and Gregory S. Pavlak and William P. Bahnfleth},
 title = {Model-based testbed for uncertainty quantification in building control systems with advanced sequences of operation},
 journal = {Journal of Architectural Engineering},
 volume = {28},
 number = {2},
 pages = {04022007},
 year = {2022},
-doi = {10.1061/(ASCE)AE.1943-5568.0000532}
+doi = {10.1061/(ASCE)AE.1943-5568.0000532},
 html = {https://doi.org/10.1061/(ASCE)AE.1943-5568.0000532},
 url = {https://ascelibrary.org/doi/pdf/10.1061/%28ASCE%29AE.1943-5568.0000532},
 abstract = {As advanced control sequences are developed to improve the operational efficiency of buildings, it is important to better understand the implications of uncertainty on system design and specification, and its propagation through system components to various performance measures. This paper describes the detailed development of a testbed for performing uncertainty quantification in heating, ventilating, and air-conditioning (HVAC) system operational parameters, which includes local loop controller dynamics and detailed control sequences at small time scales. The testbed was developed using a Modelica-based building model that allows controllers to be accurately simulated along with the building heat transfer physics. The model is demonstrated by applying it to uncertainty quantification in annual site electricity use and internal zone conditions, due to the inherent inaccuracies in system sensors and actuators. The results and the testbed are intended to aid others in the research community who may need a similar HVAC controls simulation testbed. }

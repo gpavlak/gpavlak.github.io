@@ -1,10 +1,9 @@
 ---
 layout: page
 title: Fatih Topak
-description: PhD Student (Visiting)
+description: Research Assistant - Middle East Technical University
+redirect: https://www.linkedin.com/in/fatihtopak/
 img: /assets/img/ftopak.jpg
-importance: 7
-category: current
+importance: 4
+category: alumni
 ---
-
-Coming soon...

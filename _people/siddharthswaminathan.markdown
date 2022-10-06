@@ -1,10 +1,9 @@
 ---
 layout: page
-title: Siddharth Swaminathan
-description: PhD Candidate
+title: Siddharth Swaminathan, Ph.D.
+description: Software/Data Engineer - TotalEnergies Renewables USA
+redirect: http://www.linkedin.com/in/siddharth-swaminathan-0243b057
 img: /assets/img/sus536.jpg
 importance: 3
-category: current
+category: alumni
 ---
-
-Coming soon...
