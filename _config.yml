@@ -185,8 +185,8 @@ jekyll-archives:
 
 scholar:
 
-  last_name: Pavlak
-  first_name: [Gregory S.]
+  last_name: 
+  first_name: 
 
   style: ieee
   locale: en
