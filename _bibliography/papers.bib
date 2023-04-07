@@ -3,55 +3,119 @@
 
 #@string{aps = {American Physical Society,}}
 
-@article{YUPREPRINT2,
-abbr = {preprint},
-pdf={PreprintRACoDesign.pdf},
+@article{YU2023120474,
+	abbr={APEN},
+	bibtex_show = {true},
 title = {Risk-aware sizing and transactive control of building portfolios with thermal energy storage},
-journal = {(under review)},
-year = {submitted},
+journal = {Applied Energy},
+volume = {332},
+pages = {120474},
+year = {2023},
+issn = {0306-2619},
+doi = {https://doi.org/10.1016/j.apenergy.2022.120474},
+html = {https://doi.org/10.1016/j.apenergy.2022.120474},
+url = {https://www.sciencedirect.com/science/article/pii/S0306261922017317},
 author = {Min Gyung Yu and Gregory S. Pavlak},
+keywords = {Conditional value at risk, Demand response, Transactive control, Stochastic optimization, Thermal energy storage},
 abstract = {With the increasing numbers of distributed energy resources are being installed at more distributed locations, it is challenging to operate the electric grid systems efficiently against the demand and supply fluctuations. Moreover, extreme conditions could result in high expenditure and grid unreliability. To address this issue, this work focused on developing a risk-averse stochastic optimal dispatch model for building portfolios with thermal energy storage using conditional value at risk to avoid expected expensive financial loss at the tail of cost distribution. Two simulation case studies were performed to assess the performance of the risk-averse controller depending on the TES sizing and quantify the value of the proposed framework compared to the deterministic approach. The results demonstrated that the risk-averse controller could benefit from larger TES sizing as storing excess energy for the emergent realizations. Overall, 42.4% of cost savings was achieved by applying the risk-averse control strategy.}
 }
 
-@article{YUPREPRINT1,
-abbr = {JESBC},
-pdf={PreprintUATXAggregator.pdf},
-title = {Decision making under uncertainty for building thermal energy storage aggregators participating in two-settlement grid markets},
-journal = {Journal of Engineering for Sustainable Buildings and Cities},
-year = {accepted},
-author = {Min Gyung Yu and Gregory S. Pavlak},
-abstract = {Smart cities will need collections of buildings that are responsive to the variation in renewable energy gen- eration. However, an unprecedented level of renewable energy being added to the power grid compounds the level of uncertainties in making decisions for reliable grid operation. Making autonomous decisions re- garding demand management requires consideration of uncertainty in the information available for planning and executing operations. Thus, this paper aims to quantitatively analyze the performances of supervisory controllers for multiple grid-integrative buildings with thermal energy storage depending on the quality of information available. Day-ahead planning and real-time model predictive controllers were developed and compared across 50 validation scenarios when given perfect information, deterministic forecasts, and stochas- tic forecasts. Despite the relatively large uncertainty in the stochastic forecasts, marked improvements were observed when a stochastic optimization was solved for both the day-ahead and real-time problems. This observation underscores the need for continued development in the area of stochastic control and decision- making for future grid-interactive buildings and improved energy management of smart cities.}
-}
-
-@article{LIPREPRINT,
-abbr = {preprint},
-pdf={PreprintHarmonyAndDiscord.pdf},
-title = {Analyzing harmony and discord among optimal building controllers responding to energy, cost, and carbon reduction objectives},
-journal = {(under review)},
-year = {submitted},
-author = {Lily Li and Gregory S. Pavlak},
-abstract = {Optimization and control of building thermal energy storage holds great potential for unlocking demand-side flexibility, an asset that is being given much attention in current grid reforms responding to the climate crisis. As greater information regarding grid operations is becoming available, grid-interactive building controls inherently have become a multi-objective problem. Typical multi-objective optimization frameworks often introduce greater complexity and computational burden and are less favorable for achieving widespread adoption. With the overall goal of easing deployment of advanced building controls and aiding the building- to-grid integration, this work aims to evaluate the trade offs and degrees of sub-optimality introduced by implementing single-objective controllers only. We formulate and apply a detailed single-objective, model predictive control (MPC) framework to individually optimize building thermal storage assets of two types of commercial buildings, informed by future grid scenarios, around energy, economic, environmental and peak demand objectives. For each day, we compare the building’s performance in every category as if it had been controlled by four separate single-objective model predictive controllers. By comparing the individual controllers for each day, we reveal the level of harmony or discord that exists between these simple single- objective problems. In essence, we quantify the potential loss that would occur in three of the objectives if the optimal control problem were to optimally respond to only one of the grid signals. Results show that on most days, the carbon and energy controllers retained most of the savings in energy, cost, and carbon. Trade-offs were observed between the peak demand controller and the other objectives, and during extreme energy pricing events. These observations are further discussed in terms of their implications for the design of grid-interactive building incentive signals and utility tariffs.}
-}
-
-@article{MOTTAHEDIPREPRINT,
-abbr = {BuildSys},
-pdf={PreprintCDCEM.pdf},
-title = {Constrained differentiable cross-entropy method for safe model-based reinforcement learning},
-journal = {9th ACM International Conference on Systems for Energy-Efficient Buildings, Cities, and Transportation (BuildSys ’22)},
-year = {accepted},
-author = {Sam Mottahedi and Gregory S. Pavlak},
-abstract = {Reinforcement learning agents must explore their environments to learn optimal policies through trial and error. Due to challenges in simulating the complexities of the real world, there is a growing trend of training reinforcement learning (RL) agents directly in the real world instead of mostly or entirely in simulation. Safety con- cerns are paramount when training RL agents directly in the real world. This paper proposes MPC-CDCEM, a model-based reinforce- ment algorithm (RL) that allows the agent to safely interact with the environment and explore without additional assumptions on system dynamics. The algorithm uses a Model Predictive Control (MPC) framework with a differentiable cross-entropy optimizer, which induces a differentiable policy that considers the constraints while addressing the objective mismatch problem in model-based RL algorithms. We evaluate our algorithm in Safety Gym environ- ments and on a practical building energy optimization problem. In addition, we showed that in both experiments, our algorithms have the lowest number of constraint violations and achieve comparable rewards compared to baseline constrained RL algorithms.}
-}
-
-@article{SEPEHRIPREPRINT,
-abbr = {preprint},
-pdf={PreprintHVACandAIS.pdf},
-title = {Joint optimization of HVAC and active insulation control strategies in residential buildings},
-journal = {(under review)},
-year = {submitted},
+@article{SEPEHRI2023112728,
+	abbr={ENB},
+	bibtex_show = {true},
+title = {Evaluating optimal control of active insulation and HVAC systems in residential buildings},
+journal = {Energy and Buildings},
+volume = {281},
+pages = {112728},
+year = {2023},
+issn = {0378-7788},
+doi = {https://doi.org/10.1016/j.enbuild.2022.112728},
+html = {https://doi.org/10.1016/j.enbuild.2022.112728},
+url = {https://www.sciencedirect.com/science/article/pii/S0378778822008994},
 author = {Amin Sepehri and Gregory S. Pavlak},
-abstract = {Recently, active insulation systems (AIS) have been conceptualized in building envelopes to optimally mod- ulate the thermal resistance in response to changing environmental conditions. Building flexibility can further be improved if the building is also equipped with optimized heating, ventilating, and air condition- ing (HVAC) control. In this work, we investigate the annual potential benefits of jointly optimizing AIS and HVAC system controls in both heating and cooling days over all climate zones (CZs) in the U.S. To reduce the computational complexity of applying model predictive control (MPC) to annual operations and detailed whole-building energy models, timeseries clustering was used to identify a set of representative days for optimizing in each climate zone. To isolate the increase in benefits from this joint optimization, we com- pare the performance to cases where the AIS and HVAC controls are optimized separately. Results indicate savings potential in all CZs, with the largest annual average savings of 9.02% and 4.02% observed in the cooling days with large daily temperature swings and heating days with cold sunny condition, respectively. Savings patterns across climate zone, day types, and HVAC mode (i.e., heating or cooling) are also discussed along with the implications of important system design variables.}
+keywords = {Active insulation, Model predictive control, Thermal energy storage, Passive thermal storage, Building thermal mass, Optimal control, Grid-interactive buildings},
+abstract = {Recently, active insulation systems (AIS) have been conceptualized in building envelopes to optimally modulate thermal resistance in response to changing environmental conditions. Building flexibility can further be improved if the building is also equipped with optimized heating, ventilating, and air conditioning (HVAC) control. In this work, we investigate the annual potential benefits of jointly optimizing AIS and HVAC system controls in both heating and cooling days over all climate zones (CZs) in the U.S. To reduce the computational complexity of applying model predictive control (MPC) to annual operations and detailed whole-building energy models, timeseries clustering was used to identify a set of representative days for optimizing in each climate zone. To isolate the increase in benefits from this joint optimization, we compare the performance to cases where the AIS and HVAC controls are optimized separately. Results indicate savings potential in all CZs, with the largest annual average savings of 9.02% and 4.02% observed in the cooling days with large daily temperature swings and heating days with cold sunny conditions, respectively. Savings patterns across climate zone, day types, and HVAC modes (i.e., heating or cooling) are also discussed along with the implications of important system design variables.}
 }
+
+@article{10.1115/1.4056962,
+	abbr={JESB},
+	bibtex_show = {true},
+    author = {Li, Lily X. and Pavlak, Gregory S.},
+    title = "{Analyzing harmony and discord among optimal building controllers responding to energy, cost, and carbon reduction objectives}",
+    journal = {ASME Journal of Engineering for Sustainable Buildings and Cities},
+    volume = {4},
+    number = {1},
+    year = {2023},
+    month = {03},
+    abstract = "{Optimization and control of building thermal energy storage holds great potential for unlocking demand-side flexibility, an asset that is being given much attention in current grid reforms responding to the climate crisis. As greater information regarding grid operations is becoming available, grid-interactive building controls inherently have become a multi-objective problem. Typical multi-objective optimization frameworks often introduce greater complexity and computational burden and are less favorable for achieving widespread adoption. With the overall goal of easing deployment of advanced building controls and aiding the building-to-grid integration, this work aims to evaluate the trade-offs and degrees of sub-optimality introduced by implementing single-objective controllers only. We formulate and apply a detailed single-objective, model predictive control (MPC) framework to individually optimize building thermal storage assets of two types of commercial buildings, informed by future grid scenarios, around energy, economic, environmental, and peak demand objectives. For each day, we compare the building’s performance in every category as if it had been controlled by four separate single-objective model predictive controllers. By comparing the individual controllers for each day, we reveal the level of harmony or discord that exists between these simple single-objective problems. In essence, we quantify the potential loss that would occur in three of the objectives if the optimal control problem were to optimally respond to only one of the grid signals. Results show that on most days, the carbon and energy controllers retained most of the savings in energy, cost, and carbon. Trade-offs were observed between the peak demand controller and the other objectives, and during extreme energy pricing events. These observations are further discussed in terms of their implications for the design of grid-interactive building incentive signals and utility tariffs.}",
+    issn = {2642-6641},
+    doi = {10.1115/1.4056962},
+    url = {https://doi.org/10.1115/1.4056962},
+    html = {https://doi.org/10.1115/1.4056962},
+    note = {011002},
+    eprint = {https://asmedigitalcollection.asme.org/sustainablebuildings/article-pdf/4/1/011002/6996242/jesbc\_4\_1\_011002.pdf},
+}
+
+
+@article{ALMASAD2023642,
+abbr={Solar},
+bibtex_show = {true},
+title = {Site suitability analysis for implementing solar PV power plants using GIS and fuzzy MCDM based approach},
+journal = {Solar Energy},
+volume = {249},
+pages = {642-650},
+year = {2023},
+issn = {0038-092X},
+doi = {https://doi.org/10.1016/j.solener.2022.11.046},
+html = {https://doi.org/10.1016/j.solener.2022.11.046},
+url = {https://www.sciencedirect.com/science/article/pii/S0038092X22008660},
+author = {Abdullah Almasad and Gregory Pavlak and Thamer Alquthami and Soundar Kumara},
+keywords = {Geographical Information Systems, Multi-Criteria Decision Making, Fuzzy Analytical Hierarchy Process, Site Suitability Analysis},
+abstract = {Although Saudi Arabia can benefit from implementing photovoltaic (PV) solar power projects to generate power, there are some environmental, economic and technical challenges which can affect the efficiency and cost effectiveness of these facilities. The goal of this paper is to build a site suitability model to identify the suitable sites for implementing solar PV solar projects in Saudi Arabia. Fuzzy analytical hierarchy process (AHP), as a weighting technique, and Preference Ranking Organization Method for Enrichment Evaluations (PROMETHEE II) method are combined to appropriately evaluate the suitable sites. 12 factors divided into two criteria (technical and economical) were incorporated to ensure minimization of construction costs while maximizing power output from the PV power plants. The resulting suitability map shows that Saudi Arabia has huge potential for implementing solar PV projects with approximately 376,623 km2 (65.1 %) of the total studied area considered, “most to highly suitable”. In addition, a validation of the model’s predictivity was conducted through an evaluation of the suitability map with respect to the future solar PV projects that Saudi Arabia is developing. The results showed that 90.6 % of the future projects fell within, “most and highly suitable” areas provided by PROMETHEE II suitability map. Furthermore, a sensitivity analysis was carried out by using different preference functions and higher weights for the economic criteria to examine the effect of economic factors toward the suitability results.}
+}
+
+
+@article{10.1115/1.4056023,
+	abbr = {JESB},
+	bibtex_show={true},
+    author = {Yu, Min Gyung and Pavlak, Gregory S.},
+    title = "{Quantifying the value of stochastic supervisory controller for building thermal energy storage aggregators in two-settlement grid markets}",
+    journal = {ASME Journal of Engineering for Sustainable Buildings and Cities},
+    volume = {3},
+    number = {3},
+    year = {2022},
+    month = {11},
+    abstract = "{Smart cities will need collections of buildings that are responsive to the variation in renewable energy generation. However, an unprecedented level of renewable energy being added to the power grid compounds the level of uncertainties in making decisions for reliable grid operation. Making autonomous decisions regarding demand management requires consideration of uncertainty in the information available for planning and executing operations. Thus, this paper aims to quantitatively analyze the performance of supervisory controllers for multiple grid-integrative buildings with thermal energy storage depending on the quality of information available. Day-ahead planning and real-time model predictive controllers were developed and compared across 50 validation scenarios when given perfect information, deterministic forecasts, and stochastic forecasts. Despite the relatively large uncertainty in the stochastic forecasts, marked improvements were observed when a stochastic optimization was solved for both the day-ahead and real-time problems. This observation underscores the need for continued development in the area of stochastic control and decision-making for future grid-interactive buildings and improved energy management of smart cities.}",
+    issn = {2642-6641},
+    doi = {10.1115/1.4056023},
+    html = {https://doi.org/10.1115/1.4056023},
+    note = {031002},
+    eprint = {https://asmedigitalcollection.asme.org/sustainablebuildings/article-pdf/3/3/031002/6941534/jesbc\_3\_3\_031002.pdf},
+    pdf={PreprintUATXAggregator.pdf},
+}
+
+
+@inproceedings{10.1145/3563357.3564055,
+abbr = {BuildSys},
+bibtex_show={true},
+pdf={PreprintCDCEM.pdf},
+author = {Sam Mottahedi and Gregory S. Pavlak},
+title = {Constrained differentiable cross-entropy method for safe model-based reinforcement learning},
+year = {2022},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3563357.3564055},
+html = {https://doi.org/10.1145/3563357.3564055},
+doi = {10.1145/3563357.3564055},
+abstract = {Reinforcement learning agents must explore their environments to learn optimal policies through trial and error. Due to challenges in simulating the complexities of the real world, there is a growing trend of training reinforcement learning (RL) agents directly in the real world instead of mostly or entirely in simulation. Safety concerns are paramount when training RL agents directly in the real world. This paper proposes MPC-CDCEM, a model-based reinforcement algorithm (RL) that allows the agent to safely interact with the environment and explore without additional assumptions on system dynamics. The algorithm uses a Model Predictive Control (MPC) framework with a differentiable cross-entropy optimizer, which induces a differentiable policy that considers the constraints while addressing the objective mismatch problem in model-based RL algorithms. We evaluate our algorithm in Safety Gym environments and on a practical building energy optimization problem. In addition, we showed that in both experiments, our algorithms have the lowest number of constraint violations and achieve comparable rewards compared to baseline constrained RL algorithms.},
+booktitle = {Proceedings of the 9th ACM International Conference on Systems for Energy-Efficient Buildings, Cities, and Transportation},
+pages = {40–48},
+numpages = {9},
+keywords = {constrained Markov decision process, limited multi-label classification, reinforcement learning, differentiable convex optimization, cross-entropy methods},
+location = {Boston, Massachusetts},
+series = {BuildSys '22}
+}
+
 
 @INPROCEEDINGS{9859293,
 abbr = {SimAUD},

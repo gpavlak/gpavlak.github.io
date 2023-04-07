@@ -17,7 +17,7 @@ social: true  # includes social icons at the bottom of the page
 
 Welcome! We are a multi-faceted team developing new solutions at the intersection of building science, data science, and optimization to reduce the energy use and carbon emissions associated with buildings. We aim to increase the efficiency, resiliency, and sustainability of buildings and communities by developing intelligent building control methods, and advanced modeling and systems analysis tools. Some of our current research topics include:
 
-- Optimal co-design methods building decarbonization
+- Optimal co-design methods for building decarbonization
 - Uncertainty-aware supervisory controls for grid-interactive building portfolios
 - Scalability and transferability of intelligent building control methods
 
